@@ -14,6 +14,9 @@
 		7F2D042B1BE034530095E851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2D042A1BE034530095E851 /* Assets.xcassets */; };
 		7F2D04361BE034540095E851 /* ClassScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D04351BE034540095E851 /* ClassScheduleTests.swift */; };
 		7F2D04411BE034540095E851 /* ClassScheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D04401BE034540095E851 /* ClassScheduleUITests.swift */; };
+		7F2D04531BE039160095E851 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D04521BE039160095E851 /* Class.swift */; };
+		7F5CE48C1BE3FEB100E167B3 /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CE48B1BE3FEB100E167B3 /* ClassCell.swift */; };
+		7F5CE48E1BE525C100E167B3 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CE48D1BE525C100E167B3 /* Singleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		7F2D043C1BE034540095E851 /* ClassScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2D04401BE034540095E851 /* ClassScheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassScheduleUITests.swift; sourceTree = "<group>"; };
 		7F2D04421BE034540095E851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F2D04521BE039160095E851 /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		7F5CE48B1BE3FEB100E167B3 /* ClassCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
+		7F5CE48D1BE525C100E167B3 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,14 @@
 		7F2D04201BE034530095E851 /* ClassSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				7F2D044F1BE038960095E851 /* Objects */,
 				7F2D04211BE034530095E851 /* AppDelegate.swift */,
 				7F2D04231BE034530095E851 /* FirstViewController.swift */,
 				7F2D04251BE034530095E851 /* SecondViewController.swift */,
 				7F2D04271BE034530095E851 /* Main.storyboard */,
 				7F2D042A1BE034530095E851 /* Assets.xcassets */,
 				7F2D042C1BE034530095E851 /* Info.plist */,
+				7F5CE48B1BE3FEB100E167B3 /* ClassCell.swift */,
 			);
 			path = ClassSchedule;
 			sourceTree = "<group>";
@@ -123,6 +131,15 @@
 				7F2D04421BE034540095E851 /* Info.plist */,
 			);
 			path = ClassScheduleUITests;
+			sourceTree = "<group>";
+		};
+		7F2D044F1BE038960095E851 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7F2D04521BE039160095E851 /* Class.swift */,
+				7F5CE48D1BE525C100E167B3 /* Singleton.swift */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F2D04531BE039160095E851 /* Class.swift in Sources */,
+				7F5CE48E1BE525C100E167B3 /* Singleton.swift in Sources */,
 				7F2D04261BE034530095E851 /* SecondViewController.swift in Sources */,
 				7F2D04221BE034530095E851 /* AppDelegate.swift in Sources */,
 				7F2D04241BE034530095E851 /* FirstViewController.swift in Sources */,
+				7F5CE48C1BE3FEB100E167B3 /* ClassCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +496,7 @@
 				7F2D04471BE034540095E851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F2D04481BE034540095E851 /* Build configuration list for PBXNativeTarget "ClassScheduleTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +505,7 @@
 				7F2D044A1BE034540095E851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F2D044B1BE034540095E851 /* Build configuration list for PBXNativeTarget "ClassScheduleUITests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +514,7 @@
 				7F2D044D1BE034540095E851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
