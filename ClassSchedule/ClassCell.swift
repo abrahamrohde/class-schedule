@@ -11,10 +11,12 @@ import UIKit
 class ClassCell: UICollectionViewCell
 {
     @IBOutlet weak var classTitle: UILabel!
+    var oClass : Class!
+    var index : Int!
     
     func configureCell(oClass: Class)
     {
         self.classTitle.text = oClass.title
-        
+        self.oClass = oClass
     }
 }
